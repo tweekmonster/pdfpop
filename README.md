@@ -6,6 +6,8 @@ PDF.
 
 ## Build
 
+**Note:** Xcode command line tools are required.
+
 ```shell
 $ git clone https://github.com/tweekmonster/pdfpop
 $ cd pdfpop

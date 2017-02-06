@@ -38,7 +38,7 @@ Or an actual range of pages (must be ascending order):
 $ pdfpop -in file.pdf -range 2-5
 ```
 
-Or an list of page ranges:
+Or a list of page ranges:
 
 ```
 $ pdfpop -in file.pdf -range 2-5,10,20-30

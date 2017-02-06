@@ -45,6 +45,11 @@ int main(int argc, const char * argv[]) {
                [formatter stringFromDate:[NSDate date]]];
     }
 
+    // I totally forgot the proper way to do this, but it works.
+    if ([outfile rangeOfString:@"/"].location == NSNotFound) {
+      outfile = [@"./" stringByAppendingString:outfile];
+    }
+
     NSFileManager *manager = [NSFileManager defaultManager];
     if (![manager isWritableFileAtPath:[outfile stringByDeletingLastPathComponent]]) {
       fprintf(stderr, "Can't write file: %s\n", [outfile UTF8String]);
